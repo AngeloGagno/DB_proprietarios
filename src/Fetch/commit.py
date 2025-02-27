@@ -2,7 +2,6 @@ from Database.models import Owner
 from API.data_model import owner_data
 from sqlalchemy.orm import Session
 
-
 def send_data_to_database(db:Session,data = owner_data()) -> None:
         for owner in data: 
             inserted_data = Owner(
