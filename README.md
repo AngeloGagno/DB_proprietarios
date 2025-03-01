@@ -1,5 +1,3 @@
-# DB_Proprietarios
-
 ## 📌 Sobre o Projeto
 
 O **DB_Proprietarios** é um projeto desenvolvido para consumir o endpoint **Owners** da API da [Avantio](https://www.avantio.com/), uma empresa especializada em **Property Management Software (PMS)**. O objetivo principal é extrair dados dos proprietários de uma conta no software e armazená-los em um banco de dados **PostgreSQL**.
