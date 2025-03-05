@@ -5,10 +5,10 @@ Abaixo estão os principais comandos para configurar e executar o projeto:
 
 ```
 # Clonar o repositório
-git clone [repositorio]
+git clone DB_proprietarios
 
 # Acessar o diretório do repositório
-cd ./[repositorio]
+cd ./DB_proprietarios
 
 # Criar o arquivo de configuração das variáveis
 touch .env

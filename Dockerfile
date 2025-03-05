@@ -4,11 +4,12 @@ FROM python:3.11
 # Definindo o diretório de trabalho dentro do container
 WORKDIR /app
 
+RUN pip install poetry
 # Copiando os arquivos necessários para a instalação do Poetry e dependências
 COPY pyproject.toml poetry.lock ./
 
 # Instalando o Poetry
-RUN pip install poetry && poetry config virtualenvs.create false && poetry install --no-dev --no-interaction --no-ansi
+RUN poetry config virtualenvs.create false && poetry install --no-root 
 
 # Copiando o restante do código
 COPY . .

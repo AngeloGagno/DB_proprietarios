@@ -6,7 +6,7 @@ import os
 
 def db_url():
     load_dotenv(override=True)
-    return os.getenv('Database_url')
+    return os.getenv('DATABASE_URL')
 
 engine = create_engine(db_url())
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

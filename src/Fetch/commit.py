@@ -13,4 +13,3 @@ def send_data_to_database(db:Session,data = owner_data()) -> None:
             )
             db.merge(inserted_data)
         db.commit()
-        print('foi')
